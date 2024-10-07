@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans Condensed", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Fira Sans Condensed", sans-serif;
+}
+.container {
+  display: flex;
+  margin-top: 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
