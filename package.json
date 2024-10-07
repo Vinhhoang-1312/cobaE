@@ -1,6 +1,9 @@
-{"scripts": {
-  "start": "node src/server/index.js",
-  "build": "tsc",
-  "dev": "nodemon src/server/index.js",
-  "test": "jest"
-}}
+
+{
+    "scripts": {
+  "start": "node src/server/index.js"
+}
+
+
+
+}
