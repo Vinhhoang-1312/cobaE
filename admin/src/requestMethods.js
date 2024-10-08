@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://cobae.onrender.com";
+const BASE_URL = "https://cobae.onrender.com/api";
 // const BASE_URL = "http://localhost:5000/api/";
 
 const account = JSON.parse(localStorage.getItem("persist:root"))?.account;

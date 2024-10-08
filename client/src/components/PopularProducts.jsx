@@ -38,9 +38,16 @@ const PopularProducts = ({ path, description }) => {
     <Container>
       <Title>{description}</Title>
       <Wrapper>
-        {products.slice(0, 8).map((item) => (
-          <ProductItem item={item} key={item._id} />
-        ))}
+        {
+      //Check Array before render the ProducItem components 
+      //This ensures that the map function is only called 
+      //when products is an array with at least one item.
+          Array.isArray(products) && products.length > 0 &&
+          products.slice(0, 8).map((item) => (
+      // the products state is initially set to an empty array ([]), 
+      //and the map function is called on it in the JSX code.
+            <ProductItem item={item} key={item._id} />
+          ))}
       </Wrapper>
     </Container>
   );
